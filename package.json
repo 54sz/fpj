@@ -9,7 +9,7 @@
     "deploy": "shopify app deploy",
     "config:use": "shopify app config use",
     "env": "shopify app env",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "set SHOPIFY_APP_URL=https://quickstart-46459454.myshopify.com  && set SHOPIFY_API_KEY=3453bbfdb0a316ef83af1bb48d92fcf6 && set SHOPIFY_API_SECRET=5a421746ad7a2cf37c0e7b537224b80e && set SCOPES=write_products && remix-serve ./build/server/index.js",
     "docker-start": "npm run setup && npm run start",
     "setup": "prisma generate && prisma migrate deploy",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
