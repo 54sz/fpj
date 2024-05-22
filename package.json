@@ -2,7 +2,7 @@
   "name": "fpj-app",
   "private": true,
   "scripts": {
-    "build": "vite build && vite build --ssr",
+    "build": "prisma generate && vite build && vite build --ssr",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
