@@ -1,0 +1,28 @@
+query RunInput {
+  cart {
+    lines {
+      merchandise {
+        ... on ProductVariant {
+          id
+          product {
+            hasAnyTag(tags: ["Limited Edition"])
+          }
+        }
+        __typename
+      }
+
+      quantity
+
+      cost {
+        subtotalAmount {
+          amount
+          currencyCode
+        }
+        totalAmount {
+          amount
+          currencyCode
+        }
+      }
+    }
+  }
+}

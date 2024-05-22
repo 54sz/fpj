@@ -3,7 +3,7 @@
 client_id = "3453bbfdb0a316ef83af1bb48d92fcf6"
 name = "fpj-app"
 handle = "fpj-app"
-application_url = "https://g-puts-illinois-pricing.trycloudflare.com"
+application_url = "https://facility-bright-flush-know.trycloudflare.com"
 embedded = true
 
 [build]
@@ -16,9 +16,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://g-puts-illinois-pricing.trycloudflare.com/auth/callback",
-  "https://g-puts-illinois-pricing.trycloudflare.com/auth/shopify/callback",
-  "https://g-puts-illinois-pricing.trycloudflare.com/api/auth/callback"
+  "https://facility-bright-flush-know.trycloudflare.com/auth/callback",
+  "https://facility-bright-flush-know.trycloudflare.com/auth/shopify/callback",
+  "https://facility-bright-flush-know.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
